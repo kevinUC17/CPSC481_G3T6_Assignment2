@@ -1,0 +1,38 @@
+
+header { 
+    background-color: rgb(38, 38, 121); 
+    color: white; 
+    padding: 10px;
+    }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+}
+#textLink{
+    text-decoration: none;
+    font-weight: bolder;
+    color: white;
+    font-family: sans-serif;
+    font-size: medium;
+}
+#textLink:hover {
+    color: lightblue;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    background-color: aquamarine;
+}
+#icon {
+    background-color: black;
+    border-color: blue;
+}
+
+#icon:hover {
+    border-color: aquamarine;
+    background-color: aqua;
+}
