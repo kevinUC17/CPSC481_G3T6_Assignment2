@@ -11,11 +11,11 @@ export default function Header() {
             <li><a id = "textLink" href="#home">Home</a></li>
             <li><a id = "textLink" href="#about">About Us</a></li>
             <li><a id = "textLink" href="#contact">Contact</a></li>
-            <div>
-              <li><a href="#home"><Search id = "icon"/></a></li>
-              <li><a href="#home"><UserIcon id = "icon"/></a></li>
-              <li><a href="#home"><Toolbar id = "icon"/></a></li>
-            </div>
+            <li className='iconLinks'>
+              <a id = "icon" href="#home"><Search /></a>
+              <a className = "userIcon" href="#home"><UserIcon /></a>
+              <a id = "icon" href="#home"><Toolbar /></a>
+            </li>
           </ul>
         </nav>
       </header>

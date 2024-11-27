@@ -10,6 +10,7 @@ ul {
     padding: 0;
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 #textLink{
     text-decoration: none;
@@ -22,17 +23,25 @@ ul {
     color: lightblue;
 }
 
-p {
-    margin: 0;
-    padding: 0;
-    background-color: aquamarine;
-}
 #icon {
-    background-color: black;
-    border-color: blue;
+    stroke: white;
 }
 
 #icon:hover {
-    border-color: aquamarine;
-    background-color: aqua;
+    stroke: lightblue;
+}
+
+.userIcon {
+    stroke: white;
+}
+
+.userIcon:hover {
+    stroke: lightblue;
+}
+
+.iconLinks {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 32px;
 }
