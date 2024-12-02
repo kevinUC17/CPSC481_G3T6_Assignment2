@@ -11,6 +11,7 @@ import ViewMedicationPlan from './component/ViewMedicationPlan';
 import HomePage from './component/HomePage';
 import Contact from './component/Contact';
 import AboutUs from './component/AboutUs'; // Import AboutUs component
+import ModifyMedicationPlan from "./component/ModifyMedicationPlan";
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
         <Route path="/patient" element={<PatientMainPage />} />
         <Route path="/view-doctor" element={<ViewDoctor />} />
         <Route path="/medication-plan" element={<ViewMedicationPlan />} />
+        <Route path="/modify-medication" element={<ModifyMedicationPlan />} />
       </Routes>
     </div>
   );

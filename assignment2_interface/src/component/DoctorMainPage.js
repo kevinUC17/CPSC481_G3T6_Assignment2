@@ -1,14 +1,23 @@
 import React from 'react';
 import './DoctorMainPage.css';
 
+import { useNavigate } from 'react-router-dom';
+
 function DoctorMainPage() {
+  const navigate = useNavigate();
+  
   return (
     <div className="doctor-main-container">
       <div className="content-container">
         <div className="left-menu">
           <button className="menu-button">View the Schedule</button>
           <button className="menu-button">View Patient Request</button>
-          <button className="menu-button">Modify Medication Plan</button>
+          <button
+            className="menu-button"
+            onClick={() => navigate('/modify-medication')}
+          >
+            Modify Medication Plan
+          </button>
         </div>
         <div className="right-panel">
           <h1>Hi Dr. John, Welcome back to SPCS</h1>
