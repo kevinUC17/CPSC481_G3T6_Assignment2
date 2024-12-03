@@ -1,11 +1,13 @@
 import React, { useState } from "react";
 import "./BookingAppointment.css";
+import {useNavigate } from "react-router-dom";
 
 const BookingAppointment = () => {
   const [selectedTime, setSelectedTime] = useState(null);
   const [reason, setReason] = useState("");
   const [doctor, setDoctor] = useState("");
   const [specificRequests, setSpecificRequests] = useState("");
+  const navigate = useNavigate();
 
   const handleTimeSelect = (time) => {
     setSelectedTime(time);
@@ -19,6 +21,7 @@ const BookingAppointment = () => {
     alert(
       `Appointment booked:\nTime: ${selectedTime}\nReason: ${reason}\nDoctor: ${doctor}\nRequests: ${specificRequests}`
     );
+    navigate('/patient-booked')
   };
 
   return (

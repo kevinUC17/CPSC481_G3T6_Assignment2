@@ -8,6 +8,7 @@ import Login from './component/Login';
 import DoctorMainPage from './component/DoctorMainPage';
 import NurseMainPage from './component/NurseMainPage';
 import PatientMainPage from './component/PatientMainPage';
+import PatientBookedPage from './component/PatientBookedPage';
 import ViewDoctor from './component/ViewDoctor';
 import ViewMedicationPlan from './component/ViewMedicationPlan';
 import HomePage from './component/HomePage';
@@ -31,6 +32,7 @@ function App() {
         <Route path="/doctor" element={<DoctorMainPage />} />
         <Route path="/nurse" element={<NurseMainPage />} />
         <Route path="/patient" element={<PatientMainPage />} />
+        <Route path="/patient-booked" element={<PatientBookedPage />} />
         <Route path="/view-doctor" element={<ViewDoctor />} />
         <Route path="/medication-plan" element={<ViewMedicationPlan />} />
         <Route path="/modify-medication" element={<ModifyMedicationPlan />} />

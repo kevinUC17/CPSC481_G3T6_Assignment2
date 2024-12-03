@@ -3,10 +3,8 @@ import { useNavigate } from 'react-router-dom';
 import './PatientMainPage.css';
 import PatientAvatar from '../assets/patient-avatar.png';
 
-function PatientMainPage() {
+function PatientBookedPage() {
   const navigate = useNavigate();
-
-  const [newBooking, netNewBooking] = useState(false);
 
   return (
     <div className="patient-main-container">
@@ -26,10 +24,16 @@ function PatientMainPage() {
             <p>Duration: 30 minutes</p>
             <p>Prerequisites: Don’t stay up late, no hard work before visiting</p>
           </div>
+          <div className="upcoming-visit">
+            <p><strong>November 15th, 2024</strong></p>
+            <p>Consultation - 11:00 AM</p>
+            <p>Duration: 30 minutes</p>
+            <p>Prerequisites: Don’t stay up late, no hard work before visiting</p>
+          </div>
         </div>
       </div>
     </div>
   );
 }
 
-export default PatientMainPage;
+export default PatientBookedPage;
