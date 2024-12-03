@@ -1,0 +1,85 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+  }
+
+  
+h3 {
+    font-size: 1.5em;
+    color: #666;
+  }
+
+.modify-medication-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #aecbf9, #8bb0f2);
+    min-height: 100vh;
+  }
+  
+.modify-medication-container h1 {
+    font-size: 2em;
+    color: #333;
+  }
+  
+.modify-medication-container label {
+    display: block;
+    margin: 10px 0;
+  }
+  
+.modify-medication-container input,
+.modify-medication-container textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+.modify-medication-container button {
+    background-color: #4993f5;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+.modify-medication-container button:hover {
+    background-color: #367cd8;
+  }
+
+
+.back-button button{
+    background-color: #4993f5;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1em;
+  }
+  
+.back-button button:hover {
+    background-color: #367cd8;
+  }
+
+.modify-medication-container select {
+    width: 100%; 
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1em;
+    background-color: #fff;
+    box-sizing: border-box;
+  }
+  
+.modify-medication-container select:focus {
+    border-color: #4993f5;
+    outline: none;
+    box-shadow: 0 0 5px rgba(73, 147, 245, 0.5);
+  }
