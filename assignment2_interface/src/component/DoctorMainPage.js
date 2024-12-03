@@ -10,7 +10,11 @@ function DoctorMainPage() {
     <div className="doctor-main-container">
       <div className="content-container">
         <div className="left-menu">
-          <button className="menu-button">View the Schedule</button>
+          <button 
+            className="menu-button"
+            onClick={() => navigate('/doctor-timeblock')}
+          >View the Schedule
+          </button>
           <button className="menu-button">View Patient Request</button>
           <button
             className="menu-button"

@@ -1,6 +1,8 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+
 import './App.css';
+
 import Navbar from './component/Navbar';
 import Login from './component/Login';
 import DoctorMainPage from './component/DoctorMainPage';
@@ -13,6 +15,8 @@ import Contact from './component/Contact';
 import AboutUs from './component/AboutUs'; // Import AboutUs component
 import Registration from './component/Registration';
 import ModifyMedicationPlan from "./component/ModifyMedicationPlan";
+import BookingAppointment from "./timeblock/BookingAppointment";
+import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 
 function App() {
   return (
@@ -30,6 +34,8 @@ function App() {
         <Route path="/view-doctor" element={<ViewDoctor />} />
         <Route path="/medication-plan" element={<ViewMedicationPlan />} />
         <Route path="/modify-medication" element={<ModifyMedicationPlan />} />
+        <Route path="/patient-booking" element={<BookingAppointment />} />
+        <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
       </Routes>
     </div>
   );
