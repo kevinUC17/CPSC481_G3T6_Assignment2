@@ -11,6 +11,7 @@ import ViewMedicationPlan from './component/ViewMedicationPlan';
 import HomePage from './component/HomePage';
 import Contact from './component/Contact';
 import AboutUs from './component/AboutUs'; // Import AboutUs component
+import Registration from './component/Registration';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/general-login" element={<Login />} />
+        <Route path="/registration" element= {<Registration/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUs />} /> {/* Route for About Us Page */}
         <Route path="/doctor" element={<DoctorMainPage />} />
