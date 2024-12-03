@@ -34,7 +34,7 @@ function App() {
         <Route path="/view-doctor" element={<ViewDoctor />} />
         <Route path="/medication-plan" element={<ViewMedicationPlan />} />
         <Route path="/modify-medication" element={<ModifyMedicationPlan />} />
-        <Route path="/patient-booking" element={<BookingAppointment />} />
+        <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
       </Routes>
     </div>
