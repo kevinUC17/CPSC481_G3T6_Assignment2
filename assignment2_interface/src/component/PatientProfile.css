@@ -1,0 +1,8 @@
+.patient-main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: linear-gradient(to bottom right, #e0e7ff, #8bb0f2);
+    min-height: 100vh;
+}
