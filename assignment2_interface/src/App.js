@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route, useLocation } from 'react-router-dom';
 
 import './App.css';
 
 import Navbar from './component/Navbar';
+import NavbarUser from './component/NavbarUser';
 import Login from './component/Login';
 import DoctorMainPage from './component/DoctorMainPage';
 import NurseMainPage from './component/NurseMainPage';
@@ -32,15 +33,38 @@ function App() {
 
   const [medicationPlans, setMedicationPlans] = useState(initialMedicationPlans);
 
+  const location = useLocation();
+  const userNavbar = [
+    '/doctor', 
+    '/nurse', 
+    '/patient', 
+    '/patient-booked', 
+    '/view-doctor',
+    '/medication-plan', 
+    '/modify-medication',
+    '/medication-plan-nurse', 
+    '/appointment'];
+    const hideNavbar = [
+      '/general-login',
+      '/registration',
+      '/appointment',
+      '/doctor-timeblock',
+      '/nurse-timeblock'
+    ];
+  const showUserNavbar = userNavbar.includes(location.pathname);
+
+  const showNavbar = hideNavbar.includes(location.pathname)
+
   return (
     <div className="App">
-      <Navbar />
+      {showNavbar ? "" : (showUserNavbar ? <NavbarUser />: <Navbar/>)}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/general-login" element={<Login />} />
         <Route path="/registration" element= {<Registration/>}/>
         <Route path="/contact" element={<Contact />} />
         <Route path="/about" element={<AboutUs />} />
+
         <Route path="/doctor" element={<DoctorMainPage />} />
         <Route path="/nurse" element={<NurseMainPage />} />
         <Route path="/patient" element={<PatientMainPage />} />
@@ -55,14 +79,9 @@ function App() {
           element={<ModifyMedicationPlan medicationPlans={medicationPlans} setMedicationPlans={setMedicationPlans}/>} 
         />
         <Route 
-          path="/medication-plan" 
-          element={<ViewMedicationPlan medicationPlans={medicationPlans} />} 
-        />
-        <Route 
           path="/medication-plan-nurse" 
           element={<ViewMedicationNurse medicationPlans={medicationPlans} setMedicationPlans={setMedicationPlans}/>} 
         />
-        <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
         <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
