@@ -1,12 +1,15 @@
 import React from 'react';
 import './NurseMainPage.css';
+import { useNavigate } from 'react-router-dom';
 
 function NurseMainPage() {
+  const navigate = useNavigate();
+
   return (
     <div className="nurse-main-container">
       <div className="content-container">
         <div className="left-menu">
-          <button className="menu-button">Scheduling Appointments</button>
+          <button className="menu-button" onClick={() => navigate('/nurse-timeblock')}>Scheduling Appointments</button>
           <button className="menu-button">Modify Patient Requests</button>
           <button className="menu-button">View Medication Plan</button>
         </div>
