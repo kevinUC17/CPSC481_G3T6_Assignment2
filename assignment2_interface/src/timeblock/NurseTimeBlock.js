@@ -1,11 +1,17 @@
 import React, { useState } from "react";
-import "./DoctorTimeBlock.css";
+import "./NurseTimeBlock.css";
 
-const DoctorTimeBlock = () => {
+const NurseTimeBlock = () => {
   const bookings = {
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: true, ready: true }],
+      "11am": [{ name: "Amy Sample", arrived: false, ready: false }],
+      "12pm": [{ name: "Jake Paul", arrived: false, ready: false }],
       "1pm": [{ name: "Adam Smith", arrived: false, ready: false }],
+      "2pm": [{ name: "Alaxander Smith", arrived: false, ready: false }],
+    },
+    Wednesday: {
+        "1pm": [{name: "John Doe", arrived: false, ready: false }]
     },
     Friday: {
       "2pm": [{ name: "John Doe", arrived: false, ready: false }],
@@ -28,8 +34,8 @@ const DoctorTimeBlock = () => {
 
   return (
     <div className="timeblock-body">
-    <div className="doctor-container">
-      <header className="doctor-header">
+    <div className="nurse-container">
+      <header className="nurse-header">
         <h1>Weekly Schedule</h1>
         <div className="instructions">
           <p><strong>Schedule Guide:</strong></p>
@@ -101,4 +107,4 @@ const DoctorTimeBlock = () => {
   );
 };
 
-export default DoctorTimeBlock;
+export default NurseTimeBlock;

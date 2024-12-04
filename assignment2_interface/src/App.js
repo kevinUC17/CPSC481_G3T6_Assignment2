@@ -18,6 +18,7 @@ import Registration from './component/Registration';
 import ModifyMedicationPlan from "./component/ModifyMedicationPlan";
 import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
+import NurseTimeBlock from "./timeblock/NurseTimeBlock";
 
 function App() {
   return (
@@ -38,6 +39,7 @@ function App() {
         <Route path="/modify-medication" element={<ModifyMedicationPlan />} />
         <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
+        <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
       </Routes>
     </div>
   );
