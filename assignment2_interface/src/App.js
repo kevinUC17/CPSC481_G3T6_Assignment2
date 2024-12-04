@@ -20,7 +20,7 @@ import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 import NurseTimeBlock from "./timeblock/NurseTimeBlock";
 import ViewMedicationNurse from "./component/ViewMedicationNurse";
-
+import PatientProfile from "./component/PatientProfile";
 
 function App() {
   // medications array
@@ -66,6 +66,7 @@ function App() {
         <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
         <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
+        <Route path="/patient-profile" element={<PatientProfile />} />
       </Routes>
     </div>
   );
