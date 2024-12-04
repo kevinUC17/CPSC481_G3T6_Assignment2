@@ -14,10 +14,8 @@ import ViewMedicationPlan from './component/ViewMedicationPlan';
 import HomePage from './component/HomePage';
 import Contact from './component/Contact';
 import ModifyMedicationPlan from "./component/ModifyMedicationPlan";
-import BookingAppointment from "./component/BookingAppointment";
 import AboutUs from './component/AboutUs'; // Import AboutUs component
 import Registration from './component/Registration';
-import ModifyMedicationPlan from "./component/ModifyMedicationPlan";
 import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 import NurseTimeBlock from "./timeblock/NurseTimeBlock";
