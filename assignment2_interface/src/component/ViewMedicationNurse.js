@@ -18,7 +18,7 @@ function ViewMedicationNurse({ medicationPlans, setMedicationPlans }) {
         <div className="title">
             <h2>Medication Plan</h2>
         </div>
-        <div className="right-panel">
+        <div className="right-panel-medication">
           {medicationPlans.length === 0 ? (
             <p>No medications added yet.</p>
           ) : (

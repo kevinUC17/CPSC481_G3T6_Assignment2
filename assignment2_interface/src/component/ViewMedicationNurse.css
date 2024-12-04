@@ -47,7 +47,7 @@ h1, h2 {
     flex-wrap: wrap;
 }
 
-.right-panel {
+.right-panel-medication {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
