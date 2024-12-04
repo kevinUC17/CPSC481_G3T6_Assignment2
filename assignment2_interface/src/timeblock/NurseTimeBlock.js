@@ -5,9 +5,18 @@ const NurseTimeBlock = () => {
   const bookings = {
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: true, ready: true }],
-      "11am": [{ name: "Amy Sample", arrived: false, ready: false }],
-      "12pm": [{ name: "Jake Paul", arrived: false, ready: false }],
-      "1pm": [{ name: "Adam Smith", arrived: false, ready: false }],
+      "11am": [{ name: "Amy Sample", arrived: false, ready: false }, 
+        { name: "John Doe", arrived: false, ready: false },],
+      "12pm": [{ name: "Jake Paul", arrived: false, ready: false },
+        { name: "Jake Paul", arrived: false, ready: false },
+        { name: "Jake Paul", arrived: false, ready: false },
+        { name: "Jake Paul", arrived: false, ready: false },
+        { name: "Jake Paul", arrived: false, ready: false },
+      ],
+      "1pm": [{ name: "Adam Smith", arrived: false, ready: false },
+        { name: "Adam Smith", arrived: false, ready: false },
+        { name: "Adam Smith", arrived: false, ready: false }
+      ],
       "2pm": [{ name: "Alaxander Smith", arrived: false, ready: false }],
     },
     Wednesday: {
