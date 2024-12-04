@@ -19,6 +19,8 @@ import Registration from './component/Registration';
 import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 import NurseTimeBlock from "./timeblock/NurseTimeBlock";
+import ViewMedicationNurse from "./component/ViewMedicationNurse";
+
 
 function App() {
   // medications array
@@ -51,6 +53,14 @@ function App() {
         <Route 
           path="/modify-medication" 
           element={<ModifyMedicationPlan medicationPlans={medicationPlans} setMedicationPlans={setMedicationPlans}/>} 
+        />
+        <Route 
+          path="/medication-plan" 
+          element={<ViewMedicationPlan medicationPlans={medicationPlans} />} 
+        />
+        <Route 
+          path="/medication-plan-nurse" 
+          element={<ViewMedicationNurse medicationPlans={medicationPlans} setMedicationPlans={setMedicationPlans}/>} 
         />
         <Route path="/appointment" element={<BookingAppointment />} />
         <Route path="/appointment" element={<BookingAppointment />} />

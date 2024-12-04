@@ -11,7 +11,7 @@ function NurseMainPage() {
         <div className="left-menu">
           <button className="menu-button" onClick={() => navigate('/nurse-timeblock')}>Scheduling Appointments</button>
           <button className="menu-button">Modify Patient Requests</button>
-          <button className="menu-button">View Medication Plan</button>
+          <button className="menu-button" onClick={() => navigate('/medication-plan-nurse')}>View Medication Plan</button>
         </div>
         <div className="right-panel">
           <h1>Hi Emily, Welcome back to SPCS</h1>
