@@ -1,27 +1,15 @@
 import React, { useState } from "react";
 import "./BookingAppointment.css";
 import {useNavigate } from "react-router-dom";
+import BookingForum from "./BookingForum";
 
 const BookingAppointment = () => {
   const [selectedTime, setSelectedTime] = useState(null);
-  const [reason, setReason] = useState("");
-  const [doctor, setDoctor] = useState("");
-  const [specificRequests, setSpecificRequests] = useState("");
   const navigate = useNavigate();
 
   const handleTimeSelect = (time) => {
     setSelectedTime(time);
-  };
-
-  const handleSubmit = () => {
-    if (!selectedTime || !reason || !doctor) {
-      alert("Please fill in all fields and select a time slot.");
-      return;
-    }
-    alert(
-      `Appointment booked:\nTime: ${selectedTime}\nReason: ${reason}\nDoctor: ${doctor}\nRequests: ${specificRequests}`
-    );
-    navigate('/patient-booked')
+    navigate('/appointment-forum');
   };
 
   return (
@@ -49,35 +37,10 @@ const BookingAppointment = () => {
           </div>
         ))}
       </div>
-
-      <div className="appointment-form">
-        <label>
-          Reason for Appointment:
-          <select value={reason} onChange={(e) => setReason(e.target.value)}>
-            <option value="">Select</option>
-            <option value="Checkup">Checkup</option>
-            <option value="Consultation">Consultation</option>
-          </select>
-        </label>
-        <label>
-          Doctor:
-          <select value={doctor} onChange={(e) => setDoctor(e.target.value)}>
-            <option value="">Select</option>
-            <option value="Dr. Smith">Dr. Smith</option>
-            <option value="Dr. Johnson">Dr. Johnson</option>
-          </select>
-        </label>
-        <label>
-          Specific Requests:
-          <textarea
-            placeholder="Write down your request..."
-            value={specificRequests}
-            onChange={(e) => setSpecificRequests(e.target.value)}
-          ></textarea>
-        </label>
-        <button onClick={handleSubmit}>Book</button>
-      </div>
     </div>
+    <BookingForum
+        selectedTime={selectedTime}
+      />
     </div>
   );
 };

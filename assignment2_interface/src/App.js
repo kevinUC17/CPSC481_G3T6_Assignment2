@@ -21,6 +21,7 @@ import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 import NurseTimeBlock from "./timeblock/NurseTimeBlock";
 import ViewMedicationNurse from "./component/ViewMedicationNurse";
+import BookingForum from "./timeblock/BookingForum";
 
 
 function App() {
@@ -49,7 +50,8 @@ function App() {
       '/registration',
       '/appointment',
       '/doctor-timeblock',
-      '/nurse-timeblock'
+      '/nurse-timeblock',
+      '/appointment-forum'
     ];
   const showUserNavbar = userNavbar.includes(location.pathname);
 
@@ -83,6 +85,7 @@ function App() {
           element={<ViewMedicationNurse medicationPlans={medicationPlans} setMedicationPlans={setMedicationPlans}/>} 
         />
         <Route path="/appointment" element={<BookingAppointment />} />
+        <Route path="/appointment-forum" element={<BookingForum />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
         <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
       </Routes>

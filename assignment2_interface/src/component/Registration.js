@@ -16,7 +16,7 @@ function Registration() {
   const handlePasswordEntry = (event) => {
     if (password1 === password2) {
         alert('Registration Sucessful');
-        navigate('/general-login');
+        navigate('/');
     } 
     else {
         alert('Password entry is incorrect. Please make sure both passwords are the same');
