@@ -38,9 +38,6 @@ const BookingAppointment = () => {
         ))}
       </div>
     </div>
-    <BookingForum
-        selectedTime={selectedTime}
-      />
     </div>
   );
 };
