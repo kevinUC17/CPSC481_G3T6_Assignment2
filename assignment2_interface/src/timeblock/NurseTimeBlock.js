@@ -4,7 +4,7 @@ import {useNavigate } from "react-router-dom";
 
 const NurseTimeBlock = () => {
   const navigate = useNavigate();
-  const bookings = ({
+  const [bookings, setBookings] = useState({
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: false, ready: false }],
       "11am": [{ name: "Amy Sample", arrived: false, ready: false }, 
@@ -47,9 +47,27 @@ const NurseTimeBlock = () => {
     });
   };
 
-  const handleDeletePatient = () => {
+  const handleDeletePatient = (index) => {
     alert("patient log successfully deleted");
-    navigate("/nurse-timeblock2")
+    setSelectedTime((prev) => {
+      const updatedPatients = prev.patients.filter((_, i) => i !== index);
+      const updatedTimeSlot = { ...prev, patients: updatedPatients };
+
+      setBookings((prevBookings) => {
+        const updatedBookings = { ...prevBookings };
+        updatedBookings[selectedTime.day][selectedTime.time] = updatedPatients;
+
+        if (updatedPatients.length === 0) {
+          const updatedDay = { ...updatedBookings[selectedTime.day] };
+          delete updatedDay[selectedTime.time];
+          updatedBookings[selectedTime.day] = updatedDay;
+        }
+
+        return updatedBookings;
+      });
+
+      return updatedTimeSlot;
+    });
   };
 
   return (
@@ -120,7 +138,7 @@ const NurseTimeBlock = () => {
                   <button className="interactive-button" onClick={() => alert('Doctor has been notifed')}
                   >Notify Doctor</button>
                 </div>
-                <button onClick={() => handleDeletePatient()}>X</button>
+                <button onClick={() => handleDeletePatient(index)}>X</button>
               </li>
             ))}
           </ul>
