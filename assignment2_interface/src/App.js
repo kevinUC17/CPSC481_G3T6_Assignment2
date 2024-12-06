@@ -42,7 +42,7 @@ function App() {
 
   // patient request array
   const initialPatientRequests = [
-    {patientName: 'Adman Smith', request: 'want acne medication'},
+    {patientName: 'Adam Smith', request: 'want acne medication'},
     {patientName: 'Jake Paul', request: 'something to help me beat the elderly'},
     {patientName: 'Aaron Smith', request: 'I have pains on my left knee that I want checked up'},
   ];
