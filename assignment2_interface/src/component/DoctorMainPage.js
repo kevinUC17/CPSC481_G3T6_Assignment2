@@ -15,7 +15,8 @@ function DoctorMainPage() {
             onClick={() => navigate('/doctor-timeblock')}
           >View the Schedule
           </button>
-          <button className="menu-button">View Patient Request</button>
+          <button className="menu-button" onClick={() => navigate('/view-request')}
+          >View Patient Request</button>
           <button
             className="menu-button"
             onClick={() => navigate('/modify-medication')}

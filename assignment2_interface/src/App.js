@@ -26,6 +26,9 @@ import BookingForum from "./timeblock/BookingForum";
 
 import PatientProfile from './patientProfile/PatientProfile';
 
+import ViewPatientRequest from './patientRequest/ViewPatientRequest';
+import ModifyPatientRequest from './patientRequest/ModifyPatientRequest';
+
 
 function App() {
   // medications array
@@ -36,6 +39,15 @@ function App() {
   ];
 
   const [medicationPlans, setMedicationPlans] = useState(initialMedicationPlans);
+
+  // patient request array
+  const initialPatientRequests = [
+    {patientName: 'Adman Smith', request: 'want acne medication'},
+    {patientName: 'Jake Paul', request: 'something to help me beat the elderly'},
+    {patientName: 'Aaron Smith', request: 'I have pains on my left knee that I want checked up'},
+  ];
+  
+  const [patientRequests, setPatientRequests] = useState(initialPatientRequests);
 
   const location = useLocation();
   const userNavbar = [
@@ -96,6 +108,13 @@ function App() {
         <Route path="/nurse-timeblock2" element={<NurseTimeBlock2 />} />
 
         <Route path="/patient-information" element = {<PatientProfile/>}/>
+
+        <Route path="/view-request" 
+        element={<ViewPatientRequest patientRequests={patientRequests} setPatientRequests={setPatientRequests}/>}
+        />
+        <Route path="/modify-request"
+         element={<ModifyPatientRequest patientRequests={patientRequests} setPatientRequests={setPatientRequests}/>}
+         />
       </Routes>
     </div>
   );
