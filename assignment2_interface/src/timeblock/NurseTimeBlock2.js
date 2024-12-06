@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import "./NurseTimeBlock.css";
 import {useNavigate } from "react-router-dom";
 
-const NurseTimeBlock = () => {
+const NurseTimeBlock2 = () => {
   const navigate = useNavigate();
-  const bookings = ({
+  const [bookings, setBookings] = useState({
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: false, ready: false }],
       "11am": [{ name: "Amy Sample", arrived: false, ready: false }, 
@@ -15,8 +15,8 @@ const NurseTimeBlock = () => {
         { name: "Jake Paul", arrived: false, ready: false },
         { name: "Jake Paul", arrived: false, ready: false },
       ],
-      "1pm": [{ name: "Adel Great", arrived: false, ready: false },
-        { name: "Adam Smith", arrived: false, ready: false },
+      "1pm": [
+        { name: "Adel Great", arrived: false, ready: false },
         { name: "Alex Smith", arrived: false, ready: false }
       ],
       "2pm": [{ name: "Alaxander Smith", arrived: false, ready: false }],
@@ -43,9 +43,9 @@ const NurseTimeBlock = () => {
     });
   };
 
-  const handleDeletePatient = () => {
+  const handleDeletePatient = (day, time, patientIndex) => {
     alert("patient log successfully deleted");
-    navigate("/nurse-timeblock2")
+    navigate("/nurse")
   };
 
   return (
@@ -130,4 +130,4 @@ const NurseTimeBlock = () => {
   );
 };
 
-export default NurseTimeBlock;
+export default NurseTimeBlock2;

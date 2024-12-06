@@ -20,6 +20,7 @@ import Registration from './component/Registration';
 import BookingAppointment from "./timeblock/BookingAppointment";
 import DoctorTimeblock from "./timeblock/DoctorTimeBlock";
 import NurseTimeBlock from "./timeblock/NurseTimeBlock";
+import NurseTimeBlock2 from "./timeblock/NurseTimeBlock2";
 import ViewMedicationNurse from "./component/ViewMedicationNurse";
 import BookingForum from "./timeblock/BookingForum";
 
@@ -88,6 +89,7 @@ function App() {
         <Route path="/appointment-forum" element={<BookingForum />} />
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
         <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
+        <Route path="/nurse-timeblock2" element={<NurseTimeBlock2 />} />
       </Routes>
     </div>
   );
