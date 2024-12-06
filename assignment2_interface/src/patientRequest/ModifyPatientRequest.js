@@ -1,43 +1,45 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function ModifyPatientRequest({ patientRequests, setPatientRequests }) {
   const [patientName, setPatient] = useState('');
-  const [medication, setMedication] = useState('');
-  const [dosage, setDosage] = useState('');
-  const [notes, setNotes] = useState('');
-  const [selectedMedication, setSelectedMedication] = useState('');
+  const [request, setRequest] = useState('');
   const navigate = useNavigate();
 
+  useEffect(() => {
+    if (patientName) {
+      const selectedPatient = patientRequests.find(
+        (patient) => patient.patientName === patientName
+      );
+      if (selectedPatient) {
+        setRequest(selectedPatient.request); 
+      } else {
+        setRequest(''); 
+      }
+    }
+  }, [patientName, patientRequests]);
 
-  const handleAddSubmit = (e) => {
+  const handleRequestSubmit = (e) => {
     e.preventDefault();
-    const newMedication = { patientName, medication, dosage, notes };
-    setPatientRequests((prevPlans) => [...prevPlans, newMedication]);
-    alert('Medication Added Successfully!');
+    const updatedRequests = patientRequests.map((patient) => {
+      if (patient.patientName === patientName) {
+        return { ...patient, request }; 
+      }
+      return patient; 
+    });
+
+    setPatientRequests(updatedRequests);
+    alert('Request Changed Successfully!');
     setPatient('');
-    setMedication('');
-    setDosage('');
-    setNotes('');
+    setRequest('');
     navigate('/nurse');
-  };
-
-
-  const handleRemoveSubmit = (e) => {
-    e.preventDefault();
-    setPatientRequests((prevPlans) => 
-      prevPlans.filter((plan) => plan.medication !== selectedMedication)
-    ); 
-    alert('Medication Removed Successfully!');
-    setSelectedMedication('');
-    navigate('/doctor');
   };
 
   return (
     <div className="modify-medication-container">
       <h1>Modify Medication Plan</h1>
 
-      <form onSubmit={handleAddSubmit}>
+      <form onSubmit={handleRequestSubmit}>
       <label>
           Patient Name:
           <select
@@ -46,40 +48,24 @@ function ModifyPatientRequest({ patientRequests, setPatientRequests }) {
             required
           >
             <option value="">Select a patient</option>
-            <option value="John-Smith">Adam Smith</option>
-            <option value="Craig Johnson">Jake Paul</option>
-            <option value="Amanda Briggs">Aaron Smith</option>
-          </select>
-        </label>
-        <label>
-          New Requests:
-          <textarea
-            value={notes}
-            onChange={(e) => setNotes(e.target.value)}
-          />
-        </label>
-        <button type="submit">Add Medication</button>
-      </form>
-
-      <form onSubmit={handleRemoveSubmit}>
-        <label>
-          Select Medication to Remove:
-          <select
-            value={selectedMedication}
-            onChange={(e) => setSelectedMedication(e.target.value)}
-            required
-          >
-            <option value="">Select a medication</option>
-            {patientRequests.map((plan, index) => (
-              <option key={index} value={plan.medication}>
-                {plan.medication} (Patient: {plan.patientName})
+            {patientRequests.map((patient) => (
+              <option key={patient.patientName} value={patient.patientName}>
+                {patient.patientName}
               </option>
             ))}
           </select>
         </label>
-        <button type="submit">Remove Medication</button>
+        <label>
+          Request:
+          <textarea
+            value={request}
+            onChange={(e) => setRequest(e.target.value)}
+            placeholder="Click a patient's name to see their request"
+          />
+        </label>
+        <button type="submit">Modify Request</button>
       </form>
-
+      <br/>
       <button
         type="button"
         className="back-button"

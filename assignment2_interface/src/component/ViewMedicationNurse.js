@@ -31,12 +31,12 @@ function ViewMedicationNurse({ medicationPlans, setMedicationPlans }) {
                 <p>{plan.dosage}</p>
                 <h4><strong>Notes</strong></h4>
                 <p>{plan.notes}</p>
-                <button
+                {/* <button
                   className="remove-button"
                   onClick={() => onRemoveMedication(index)}
                 >
                   Remove
-                </button>
+                </button> */}
               </div>
             ))
           )}
