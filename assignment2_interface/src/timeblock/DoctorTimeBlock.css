@@ -158,15 +158,15 @@
 }
 
 .status {
+  background-color: white; /* Default state (inactive) */
+  color: black;
+  border: 1px solid black;
   padding: 5px 10px;
-  border: 1px solid #007bff;
-  background: white;
-  color: #007bff;
-  border-radius: 5px;
   cursor: pointer;
+  transition: background-color 0.3s;
 }
 
 .status.active {
-  background: #007bff;
+  background-color: blue; /* Active state (e.g., when marked) */
   color: white;
 }
