@@ -24,6 +24,8 @@ import NurseTimeBlock2 from "./timeblock/NurseTimeBlock2";
 import ViewMedicationNurse from "./component/ViewMedicationNurse";
 import BookingForum from "./timeblock/BookingForum";
 
+import PatientProfile from './patientProfile/PatientProfile';
+
 
 function App() {
   // medications array
@@ -91,6 +93,8 @@ function App() {
         <Route path="/doctor-timeblock" element={<DoctorTimeblock />} />
         <Route path="/nurse-timeblock" element={<NurseTimeBlock />} />
         <Route path="/nurse-timeblock2" element={<NurseTimeBlock2 />} />
+
+        <Route path="/patient-information" element = {<PatientProfile/>}/>
       </Routes>
     </div>
   );
