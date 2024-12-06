@@ -36,9 +36,13 @@ const NurseTimeBlock = () => {
   };
 
   const toggleStatus = (index, field) => {
+    // Update the patients' status by creating a new array
     setSelectedTime((prev) => {
       const updatedPatients = [...prev.patients];
-      updatedPatients[index][field] = !updatedPatients[index][field];
+      updatedPatients[index] = {
+        ...updatedPatients[index],
+        [field]: !updatedPatients[index][field], // Toggle the status
+      };
       return { ...prev, patients: updatedPatients };
     });
   };

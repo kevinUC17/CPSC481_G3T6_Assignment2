@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import "./DoctorTimeBlock.css";
+import {useNavigate } from "react-router-dom";
 
 const DoctorTimeBlock = () => {
+  const navigate = useNavigate();
   const bookings = {
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: true, ready: true }],
@@ -23,15 +25,15 @@ const DoctorTimeBlock = () => {
   };
 
   const toggleStatus = (index, field) => {
-    // Update the patients' status by creating a new array
-    setSelectedTime((prev) => {
-      const updatedPatients = [...prev.patients];
-      updatedPatients[index] = {
-        ...updatedPatients[index],
-        [field]: !updatedPatients[index][field], // Toggle the status
-      };
-      return { ...prev, patients: updatedPatients };
-    });
+    // setSelectedTime((prev) => {
+    //   const updatedPatients = [...prev.patients];
+    //   updatedPatients[index] = {
+    //     ...updatedPatients[index],
+    //     [field]: !updatedPatients[index][field],
+    //   };
+    //   return { ...prev, patients: updatedPatients };
+    // });
+    //removed toggle interaction for docter interface in order to follow design
   };
 
   return (
@@ -93,10 +95,12 @@ const DoctorTimeBlock = () => {
                   >
                     {patient.ready ? "Patient is Ready" : "Mark Ready"}
                   </button>
+                  <button className="patient-info-button" onClick={() => navigate('/patient-information')}
+                  >Patient Information</button>
                 </li>
               ))}
             </ul>
-            <button className="close-popup" onClick={() => setSelectedTime(null)}>
+            <button onClick={() => setSelectedTime(null)}>
               Close Popup
             </button>
           </div>
