@@ -53,6 +53,7 @@ const BookingForum = (patientTime) => {
           ></textarea>
         </label>
         <button onClick={handleSubmit}>Book</button>
+        <button className = "profile-button" onClick={() => navigate(-1)}>Go Back</button>
       </div>
     </div>
     </div>
