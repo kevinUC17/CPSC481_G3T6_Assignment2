@@ -55,7 +55,8 @@ function App() {
       '/doctor-timeblock',
       '/nurse-timeblock',
       '/nurse-timeblock2',
-      '/appointment-forum'
+      '/appointment-forum',
+      '/patient-information'
     ];
   const showUserNavbar = userNavbar.includes(location.pathname);
 

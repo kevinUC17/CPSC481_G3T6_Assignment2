@@ -1,8 +1,9 @@
-body {
+.profile-body {
     font-family: Arial, sans-serif;
     background-color: #f0f8ff;
     margin: 0;
     padding: 0;
+    height: 100vh;
 }
 
 .container {
@@ -24,15 +25,16 @@ body {
     margin-top: 20px;
 }
 
-.patient-details,
-.appointment-request {
+.profile-patient-details,
+.profile-appointment-request {
     width: 48%;
     padding: 15px;
     background-color: white;
     border-radius: 8px;
+    justify-content: center
 }
 
-textarea {
+.profile-textarea {
     width: 80%;
     height: 50px;
 }
@@ -63,7 +65,7 @@ textarea {
     margin-top: 5px;
 }
 
-button {
+.profile-button {
     background-color: #2f80ed;
     color: white;
     border: none;
@@ -73,7 +75,7 @@ button {
     transition: background-color 0.3s;
 }
 
-button:hover {
+.profile-button:hover {
     background-color: #367cd8;
 }
 
@@ -100,4 +102,9 @@ button:hover {
     border: 1px solid #ddd;
     border-radius: 4px;
     min-height: 60px;
+}
+
+.profile-list {
+    list-style-type: none;
+    padding: 0;
 }

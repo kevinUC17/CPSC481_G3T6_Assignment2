@@ -81,9 +81,11 @@ const PatientProfile = () => {
   };
 
   return (
+    <div className="profile-body">
+    <h1>Patient Information</h1>
     <div className="patient-profile-container">
       <div className="patient-info">
-        <div className="patient-details">
+        <div className="profile-patient-details">
           <h2>Patient: {patientDetails.name}</h2>
           {isEditing ? (
             <div>
@@ -143,7 +145,7 @@ const PatientProfile = () => {
               </label>
             </div>
           ) : (
-            <ul>
+            <ul className="profile-list">
               <li>Height: {patientDetails.height}cm</li>
               <li>Weight: {patientDetails.weight}lbs</li>
               <li>Blood Pressure: {patientDetails.bloodPressure}</li>
@@ -152,14 +154,14 @@ const PatientProfile = () => {
               <li>Underlying Conditions: {patientDetails.conditions}</li>
             </ul>
           )}
-          <button onClick={handleEditToggle}>
+          <button className = "profile-button" onClick={handleEditToggle}>
             {isEditing ? "Save" : "Edit"}
           </button>
         </div>
 
-        <div className="appointment-request">
+        <div className="profile-appointment-request">
           <h3>Patient Appointment Request</h3>
-          <textarea readOnly value={appointmentRequest}></textarea>
+          <textarea className="profile-textarea" readOnly value={appointmentRequest}></textarea>
         </div>
       </div>
 
@@ -177,7 +179,7 @@ const PatientProfile = () => {
             value={newPrescription}
             onChange={(e) => setNewPrescription(e.target.value)}
           />
-          <button onClick={addLog}>Submit</button>
+          <button className = "profile-button" onClick={addLog}>Submit</button>
         </div>
 
         <div className="log-history">
@@ -205,9 +207,10 @@ const PatientProfile = () => {
         </div>
       </div>
 
-      <button onClick={() => navigate(-1)} className="go-back">
+      <button onClick={() => navigate(-1)} className = "profile-button">
         Go Back
       </button>
+    </div>
     </div>
   );
 };
