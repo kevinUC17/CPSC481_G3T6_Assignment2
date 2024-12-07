@@ -98,7 +98,7 @@ function ModifyMedicationPlan({ medicationPlans, setMedicationPlans }) {
         </label>
         <button type="submit">Remove Medication</button>
       </form>
-
+      <br/>
       <button
         type="button"
         className="back-button"
