@@ -99,13 +99,13 @@ function ModifyMedicationPlan({ medicationPlans, setMedicationPlans }) {
         <button type="submit">Remove Medication</button>
       </form>
       <br/>
-      <button
+      {/* <button
         type="button"
         className="back-button"
         onClick={() => navigate('/doctor')}
       >
         Back to Doctor's Home Page
-      </button>
+      </button> */}
     </div>
   );
 }

@@ -28,7 +28,7 @@ function ViewDoctor() {
           <p>Cardiologist with 15 years of experience specializing in international cardiology and advanced procedures.</p>
         </div>
       </div>
-      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button>
+      {/* <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button> */}
     </div>
   );
 }

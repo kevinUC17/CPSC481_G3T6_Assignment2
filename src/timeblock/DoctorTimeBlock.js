@@ -42,7 +42,7 @@ const DoctorTimeBlock = () => {
         <header className="doctor-header">
           <div>
           <h1>Weekly Schedule</h1>
-            <button className = "profile-button" onClick={() => navigate('/doctor')}>Go Back</button>
+            {/* <button className = "profile-button" onClick={() => navigate('/doctor')}>Go Back</button> */}
           </div>
           <div className="instructions">
             <p><strong>Schedule Guide:</strong></p>

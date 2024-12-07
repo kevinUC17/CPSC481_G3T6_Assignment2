@@ -15,7 +15,7 @@ function ViewPatientRequest({ patientRequests, setPatientRequests }) {
     <div className="medication-plan-container">
       <div className="content-container">
         <div className="title">
-            <h2>Upcoming Patient Requests</h2>
+            <h1>Upcoming Patient Requests</h1>
         </div>
         <div className="right-panel-medication">
           {patientRequests.length === 0 ? (
@@ -31,7 +31,7 @@ function ViewPatientRequest({ patientRequests, setPatientRequests }) {
           )}
         </div>
       </div>
-      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button>
+      {/* <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button> */}
     </div>
   );
 }

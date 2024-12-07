@@ -207,9 +207,9 @@ const PatientProfile = () => {
         </div>
       </div>
 
-      <button onClick={() => navigate(-1)} className = "profile-button">
+      {/* <button onClick={() => navigate(-1)} className = "profile-button">
         Go Back
-      </button>
+      </button> */}
     </div>
     </div>
   );

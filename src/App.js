@@ -5,6 +5,8 @@ import './App.css';
 
 import Navbar from './component/Navbar';
 import NavbarUser from './component/NavbarUser';
+import NavbarUserHome from './component/NavbarUserHome';
+
 import Login from './component/Login';
 import DoctorMainPage from './component/DoctorMainPage';
 import NurseMainPage from './component/NurseMainPage';
@@ -50,33 +52,43 @@ function App() {
   const [patientRequests, setPatientRequests] = useState(initialPatientRequests);
 
   const location = useLocation();
-  const userNavbar = [
-    '/doctor', 
-    '/nurse', 
-    '/patient', 
-    '/patient-booked', 
+  const userNavbar = [ 
     '/view-doctor',
     '/medication-plan', 
     '/modify-medication',
     '/medication-plan-nurse', 
-    '/appointment'];
-    const hideNavbar = [
-      '/general-login',
-      '/registration',
-      '/appointment',
-      '/doctor-timeblock',
-      '/nurse-timeblock',
-      '/nurse-timeblock2',
-      '/appointment-forum',
-      '/patient-information'
-    ];
+    '/appointment',
+
+    '/appointment',
+    '/doctor-timeblock',
+    '/nurse-timeblock',
+    '/nurse-timeblock2',
+    '/appointment-forum',
+    '/patient-information',
+
+    '/modify-request',
+    '/view-request',
+  ];
+  const hideNavbar = [
+    '/general-login',
+    '/registration',
+  ];
+  const homeNavbar = [
+    '/doctor', 
+    '/nurse', 
+    '/patient',
+    '/patient-booked', 
+  ]
+
+  const showHomeNavbar = homeNavbar.includes(location.pathname);
+  
   const showUserNavbar = userNavbar.includes(location.pathname);
 
   const showNavbar = hideNavbar.includes(location.pathname)
 
   return (
     <div className="App">
-      {showNavbar ? "" : (showUserNavbar ? <NavbarUser />: <Navbar/>)}
+      {showNavbar ? "" : (showUserNavbar ? <NavbarUser/> : (showHomeNavbar ? <NavbarUserHome/> : <Navbar />))}
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/general-login" element={<Login />} />

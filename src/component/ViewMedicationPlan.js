@@ -9,10 +9,11 @@ function ViewMedicationPlan({ medicationPlans }) {
   return (
     <div className="medication-plan-container">
       <div className="content-container">
-        <div className="left-panel">
+      {/* <button className="med-go-back-button" onClick={() => navigate(-1)}>Go Back</button> */}
+        {/* <div className="left-panel">
           <h1>Welcome, View Your Medications</h1>
           <img src={PrescriptionBottle} alt="Prescription" className="prescription-image" />
-        </div>
+        </div> */}
         <div className="right-panel">
           <h2>Medication Plan</h2>
           {medicationPlans.length === 0 ? (
@@ -31,7 +32,6 @@ function ViewMedicationPlan({ medicationPlans }) {
           )}
         </div>
       </div>
-      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button>
     </div>
   );
 }

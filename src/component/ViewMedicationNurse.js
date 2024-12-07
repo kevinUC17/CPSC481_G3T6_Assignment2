@@ -5,18 +5,18 @@ import './ViewMedicationNurse.css';
 function ViewMedicationNurse({ medicationPlans, setMedicationPlans }) {
   const navigate = useNavigate();
 
-  const onRemoveMedication = (index) => {
-    const confirmed = window.confirm("Are you sure you want to remove this medication?");
-    if (confirmed) {
-      setMedicationPlans((prevPlans) => prevPlans.filter((_, i) => i !== index));
-    }
-  };
+  // const onRemoveMedication = (index) => {
+  //   const confirmed = window.confirm("Are you sure you want to remove this medication?");
+  //   if (confirmed) {
+  //     setMedicationPlans((prevPlans) => prevPlans.filter((_, i) => i !== index));
+  //   }
+  // };
 
   return (
     <div className="medication-plan-container">
       <div className="content-container">
         <div className="title">
-            <h2>Medication Plan</h2>
+            <h1>Medication Plan</h1>
         </div>
         <div className="right-panel-medication">
           {medicationPlans.length === 0 ? (
@@ -42,7 +42,7 @@ function ViewMedicationNurse({ medicationPlans, setMedicationPlans }) {
           )}
         </div>
       </div>
-      <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button>
+      {/* <button className="go-back-button" onClick={() => navigate(-1)}>Go Back</button> */}
     </div>
   );
 }

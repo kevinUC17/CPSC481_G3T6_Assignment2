@@ -15,7 +15,7 @@ const BookingAppointment = () => {
   return (
     <div className="timeblock-body">
     <div className="booking-container">
-    <button className = "profile-button" onClick={() => navigate('/patient')}>Go Back</button>
+    {/* <button className = "profile-button" onClick={() => navigate('/patient')}>Go Back</button> */}
       <div className="schedule">
         {["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"].map((day) => (
           <div key={day} className="day-column">

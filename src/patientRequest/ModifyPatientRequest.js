@@ -37,7 +37,7 @@ function ModifyPatientRequest({ patientRequests, setPatientRequests }) {
 
   return (
     <div className="modify-medication-container">
-      <h1>Modify Medication Plan</h1>
+      <h1>Modify Patient Request</h1>
 
       <form onSubmit={handleRequestSubmit}>
       <label>
@@ -66,13 +66,13 @@ function ModifyPatientRequest({ patientRequests, setPatientRequests }) {
         <button type="submit">Modify Request</button>
       </form>
       <br/>
-      <button
+      {/* <button
         type="button"
         className="back-button"
         onClick={() => navigate('/nurse')}
       >
         Back to Nurse's Home Page
-      </button>
+      </button> */}
     </div>
   );
 }
