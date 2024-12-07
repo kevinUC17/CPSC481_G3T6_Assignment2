@@ -6,7 +6,7 @@ import BookingForum from "./BookingForum";
 const BookingAppointment = () => {
   const [selectedTime, setSelectedTime] = useState(null);
   const navigate = useNavigate();
-  const [unavailableTime, setUnavailableTime] = useState(["Tuesday 11pm"]);
+  const [unavailableTime, setUnavailableTime] = useState(["Tuesday 11am"]);
 
   const handleTimeSelect = (time) => {
     if (unavailableTime.includes(time)) {
