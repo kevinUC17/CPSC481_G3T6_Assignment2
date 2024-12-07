@@ -25,17 +25,12 @@ function DoctorMainPage() {
           </button>
         </div>
         <div className="right-panel">
-          <h1>Hi Dr. John, Welcome back to SPCS</h1>
+          <h1>Hi Dr. Andrew, Welcome back to SPCS</h1>
           <h3>Upcoming Patients</h3>
           <div className="upcoming-patients">
             <div className="patient-card">
-              <p><strong>October 10th, 2024</strong></p>
-              <p>Jack's Mental Issue Check-In - 9:00 AM</p>
-              <p>Duration: 30 mins</p>
-            </div>
-            <div className="patient-card">
-              <p><strong>October 10th, 2024</strong></p>
-              <p>Amy's Chest Pain Check-In - 9:45 AM</p>
+              <p><strong>November 12th, 2024</strong></p>
+              <p>Amy's Chest Pain Check-In - 10:15 AM</p>
               <p>Duration: 30 mins</p>
             </div>
           </div>

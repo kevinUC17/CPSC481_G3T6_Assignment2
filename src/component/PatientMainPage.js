@@ -21,7 +21,7 @@ function PatientMainPage() {
           <h1>Hi Jack, Welcome back to SPCS</h1>
           <h3>Upcoming Appointments</h3>
           <div className="upcoming-visit">
-            <p><strong>November 12th, 2024</strong></p>
+            <p><strong>November 14th, 2024</strong></p>
             <p>General Checkup - 9:00 AM</p>
             <p>Duration: 30 minutes</p>
             <p>Prerequisites: Don’t stay up late, no hard work before visiting</p>

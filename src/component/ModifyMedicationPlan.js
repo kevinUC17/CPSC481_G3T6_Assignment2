@@ -47,9 +47,8 @@ function ModifyMedicationPlan({ medicationPlans, setMedicationPlans }) {
             required
           >
             <option value="">Select a patient</option>
-            <option value="John-Smith">John Smith</option>
-            <option value="Craig Johnson">Craig Johnson</option>
-            <option value="Amanda Briggs">Amanda Briggs</option>
+            <option value="Jack Smith">Jack Smith</option>
+            <option value="Amy Semple">Amy Semple</option>
           </select>
         </label>
         <label>

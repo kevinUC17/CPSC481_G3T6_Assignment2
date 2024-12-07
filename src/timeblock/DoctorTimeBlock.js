@@ -7,10 +7,10 @@ const DoctorTimeBlock = () => {
   const bookings = {
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: true, ready: true }],
-      "1pm": [{ name: "Adam Smith", arrived: false, ready: false }],
+      // "1pm": [{ name: "Adam Smith", arrived: false, ready: false }],
     },
     Friday: {
-      "2pm": [{ name: "John Doe", arrived: false, ready: false }],
+      // "2pm": [{ name: "John Doe", arrived: false, ready: false }],
     },
   };
 

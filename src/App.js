@@ -35,18 +35,18 @@ import ModifyPatientRequest from './patientRequest/ModifyPatientRequest';
 function App() {
   // medications array
   const initialMedicationPlans = [
-    { patientName: 'John Smith', medication: 'Aspirin', dosage: '100mg', notes: 'Take with food' },
-    { patientName: 'Craig Johnson', medication: 'Ibuprofen', dosage: '200mg', notes: 'Take after meals' },
-    { patientName: 'Amanda Briggs', medication: 'Paracetamol', dosage: '500mg', notes: 'As needed for pain' },
+    { patientName: 'Jack Smith', medication: 'Aspirin', dosage: '100mg', notes: 'Take with food' },
+    { patientName: 'Jack Smith', medication: 'Ibuprofen', dosage: '200mg', notes: 'Take after meals' },
+    { patientName: 'Jack Smith', medication: 'Paracetamol', dosage: '500mg', notes: 'As needed for pain' },
   ];
 
   const [medicationPlans, setMedicationPlans] = useState(initialMedicationPlans);
 
   // patient request array
   const initialPatientRequests = [
-    {patientName: 'Adam Smith', request: 'want acne medication'},
-    {patientName: 'Jake Paul', request: 'something to help me beat the elderly'},
-    {patientName: 'Aaron Smith', request: 'I have pains on my left knee that I want checked up'},
+    {patientName: 'Jack Smith', request: 'I have mental health issues.'},
+    {patientName: 'Amy Semple', request: 'Having frequent chest pain at night.'},
+    {patientName: 'Jack Smith', request: 'I have sleep problems.'},
   ];
   
   const [patientRequests, setPatientRequests] = useState(initialPatientRequests);

@@ -7,25 +7,12 @@ const NurseTimeBlock = () => {
   const [bookings, setBookings] = useState({
     Tuesday: {
       "10am": [{ name: "Amy Semple", arrived: false, ready: false }],
-      "11am": [{ name: "Amy Sample", arrived: false, ready: false }, 
-        { name: "John Doe", arrived: false, ready: false },],
-      "12pm": [{ name: "Jake Paul", arrived: false, ready: false },
-        { name: "Jake Paul", arrived: false, ready: false },
-        { name: "Jake Paul", arrived: false, ready: false },
-        { name: "Jake Paul", arrived: false, ready: false },
-        { name: "Jake Paul", arrived: false, ready: false },
-      ],
-      "1pm": [{ name: "Adel Great", arrived: false, ready: false },
-        { name: "Adam Smith", arrived: false, ready: false },
-        { name: "Alex Smith", arrived: false, ready: false }
-      ],
-      "2pm": [{ name: "Alaxander Smith", arrived: false, ready: false }],
     },
-    Wednesday: {
-        "1pm": [{name: "John Doe", arrived: false, ready: false }]
+    Thursday: {
+        "9am": [{name: "Jack Smith", arrived: false, ready: false }]
     },
     Friday: {
-      "2pm": [{ name: "John Doe", arrived: false, ready: false }],
+      "11am": [{ name: "Jack Smith", arrived: false, ready: false }],
     },
   });
 
