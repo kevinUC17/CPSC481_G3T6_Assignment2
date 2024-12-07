@@ -40,8 +40,9 @@ const BookingForum = (patientTime) => {
           Doctor:
           <select value={doctor} onChange={(e) => setDoctor(e.target.value)}>
             <option value="">Select</option>
-            <option value="Dr. Smith">Dr. Smith</option>
-            <option value="Dr. Johnson">Dr. Johnson</option>
+            <option value="Dr. John">Dr. John</option>
+            <option value="Dr. Andrew">Dr. Andrew</option>
+            <option value="Dr. Angela">Dr. Angela</option>
           </select>
         </label>
         <label>
