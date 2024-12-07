@@ -70,10 +70,10 @@ function App() {
     '/view-request',
   ];
   const hideNavbar = [
-    '/general-login',
-    '/registration',
   ];
   const homeNavbar = [
+    '/general-login',
+    '/registration',
     '/doctor', 
     '/nurse', 
     '/patient',
