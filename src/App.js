@@ -72,8 +72,8 @@ function App() {
   const hideNavbar = [
   ];
   const homeNavbar = [
-    '/general-login',
-    '/registration',
+    // '/general-login',
+    // '/registration',
     '/doctor', 
     '/nurse', 
     '/patient',
