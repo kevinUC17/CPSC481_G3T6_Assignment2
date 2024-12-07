@@ -76,7 +76,7 @@ const NurseTimeBlock = () => {
       <header className="nurse-header">
         <div>
         <h1>Weekly Schedule</h1>
-          <button className = "profile-button" onClick={() => navigate('/nurse')}>Go Back</button>
+          {/* <button className = "profile-button" onClick={() => navigate('/nurse')}>Go Back</button> */}
         </div>
         <div className="instructions">
           <p><strong>Schedule Guide:</strong></p>
