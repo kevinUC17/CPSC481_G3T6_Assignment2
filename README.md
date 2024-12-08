@@ -1,4 +1,4 @@
-ENSF 481 - T6G3
+CPSC481 - T6G3
 
 **NOTE: The "main" branch does not contain the most recent code. Please go to the "deployment" branch for the most recent changes**
 
