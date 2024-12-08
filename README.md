@@ -113,7 +113,7 @@ Our final prototype addressess all six tasks that we created during the initial 
 - Enter the following six digit code for the two factor authentication: **_123456_**
 - Click the **_Verify_** Button
 - Click on the _**Scheduling Appointments**_ button
-- In the appoitnment interface click on timeblock in the _Tuesday_ Column and in the _10am_ row
+- In the appointment interface click on timeblock in the _Tuesday_ Column and in the _10am_ row
 - Click on the _**Patient Information**_ button
 - Click the _**Edit**_ button
 - Change the _Height_ to _**183**_
@@ -133,7 +133,7 @@ Our final prototype addressess all six tasks that we created during the initial 
 - Click the _View Available Doctor_ Button to see which doctor you want to schedule an appointment with
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click the **_Booking an Appointment_** Button
-- In the appoitnment interface click on the _**11am**_ timeblock in the _Friday_ Column
+- In the appointment interface click on the _**11am**_ timeblock in the _Friday_ Column
 - In the _Reason for Appointment_ Dropdown menu, select the _**Consultation**_ Option
 - In the _Doctor_ Dropdown menu, select the doctor: _**Dr. Angela**_
 - In the _Specific Requests_ text area write down the following: _**I have sleep problems.**_
