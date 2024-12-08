@@ -103,7 +103,7 @@ Our final prototype addressess all six tasks that we created during the initial 
 - Click the _**Mark Arrived**_, _**Mark Ready**_, and _**Notify Doctor**_ button to notify the doctor that the patient has arrived
 - Click the **_Logout_** Button
 
-**Task5 **- Update Patient Records (User: Nurse)
+**Task5**- Update Patient Records (User: Nurse)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
 - In the _Username_ section enter the following: **_emilyfoo21@gmail.com_**
