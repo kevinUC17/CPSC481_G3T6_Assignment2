@@ -9,17 +9,17 @@ Group Members:
 - Ruben, Vos de Wael
 - Samuel, Wang
 
-What Cases/Functions were Implemented?
+**What Cases/Functions were Implemented?**
 -
-Our final prototype addressess the six tasks that we created during the initial design phase.
+Our final prototype addressess all six tasks that we created during the initial design phase.
 
-Instrucitons:
+**Instrucitons:**
 -
 
-Task1 - Manage and Review Patient Information (User: Doctor)
+**Task1** - Manage and Review Patient Information (User: Doctor)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
-- In the _Username_ section enter the following: **andrewsmith@gmail.com_**
+- In the _Username_ section enter the following: **_andrewsmith@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
 - In the _Access Code_ section enter the following: **_123_**
 - Click the **_Submit_** Button
@@ -34,10 +34,10 @@ Task1 - Manage and Review Patient Information (User: Doctor)
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click the _**Logout**_ button
 
-Task2 - Conduct Patient Consultations (User: Doctor)
+**Task2** - Conduct Patient Consultations (User: Doctor)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
-- In the _Username_ section enter the following: **andrewsmith@gmail.com_**
+- In the _Username_ section enter the following: **_andrewsmith@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
 - In the _Access Code_ section enter the following: **_123_**
 - Click the **_Submit_** Button
@@ -57,7 +57,7 @@ Task2 - Conduct Patient Consultations (User: Doctor)
 - Change the _Underlying Conditions_ to _**Chronic shoulder pain**_
 - Click the _**Save**_ button
 - In the _Assessment..._ textbox write: _**Administer pain killers**_
-- In the _Prescription..._ textbox write: _**Administer pain killers**_
+- In the _Prescription..._ textbox write: _**pain killers**_
 - Click the **_Submit_** button
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click on the _**Back**_ button on the top left corner of the toolbar
@@ -70,25 +70,25 @@ Task2 - Conduct Patient Consultations (User: Doctor)
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click on the _**Logout**_ button
 
-Task3 - Make the Doctor's Schedule (User: Nurse)
+**Task3** - Make the Doctor's Schedule (User: Nurse)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
-- In the _Username_ section enter the following: **emilyfoo21@gmail.com_**
+- In the _Username_ section enter the following: **_emilyfoo21@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
 - In the _Access Code_ section enter the following: **_321_**
 - Click the **_Submit_** Button
 - Enter the following six digit code for the two factor authentication: **_123456_**
 - Click the **_Verify_** Button
 - Click on the _**Scheduling Appointments**_ button
-- Click on the timeblock in the _Friday_ column on the _11am_ row
-- Click the _**X**__ button to unbook the patient
+- Click on the timeblock in the _Friday_ column and in the _11am_ row
+- Click the _**X**_ button to unbook the patient
 - Close the alert notification
 - Click the **_Logout_** Button
 
-Task4 - Assist with Patient Check-Ins (User: Nurse)
+**Task4** - Assist with Patient Check-Ins (User: Nurse)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
-- In the _Username_ section enter the following: **emilyfoo21@gmail.com_**
+- In the _Username_ section enter the following: **_emilyfoo21@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
 - In the _Access Code_ section enter the following: **_321_**
 - Click the **_Submit_** Button
@@ -96,23 +96,24 @@ Task4 - Assist with Patient Check-Ins (User: Nurse)
 - Click the **_Verify_** Button
 - Click on the _**Modify Patient Requests**_ Button
 - In the _Patient Name_ Dropdown menu, select the patient: _**Amy Semple**_
-- Interview the patient: Amy Semple and confirm that their request in correct. If incorrect make modifications to request in the _**Request**_ textbox. Amy confirms her request so we don't make any modifications to her request.
+- Interview the patient: Amy Semple and confirm that their request is correct. If incorrect, make modifications to request in the _**Request**_ textbox. Amy confirms her request so we don't make any modifications to her request.
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click on the _**Scheduling Appointments**_ button
-- Click on the timeblock in the _Tuesday_ column on the _10am_ row
+- Click on the timeblock in the _Tuesday_ column and in the _10am_ row
 - Click the _**Mark Arrived**_, _**Mark Ready**_, and _**Notify Doctor**_ button to notify the doctor that the patient has arrived
 - Click the **_Logout_** Button
 
-Task5 - Update Patient Records (User: Nurse)
+**Task5 **- Update Patient Records (User: Nurse)
 - Login by clicking the _Login_ Button on the top right corner of the toolbar
 - Click on the _**Switch to Staff Login**_ Button
-- In the _Username_ section enter the following: **emilyfoo21@gmail.com_**
+- In the _Username_ section enter the following: **_emilyfoo21@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
 - In the _Access Code_ section enter the following: **_321_**
 - Click the **_Submit_** Button
 - Enter the following six digit code for the two factor authentication: **_123456_**
 - Click the **_Verify_** Button
 - Click on the _**Scheduling Appointments**_ button
+- In the appoitnment interface click on timeblock in the _Tuesday_ Column and in the _10am_ row
 - Click on the _**Patient Information**_ button
 - Click the _**Edit**_ button
 - Change the _Height_ to _**183**_
@@ -122,7 +123,7 @@ Task5 - Update Patient Records (User: Nurse)
 - Click on the _**Back**_ button on the top left corner of the toolbar
 - Click the **_Logout_** Button
 
-Task6 - Schedule and Check-In for Appointments (User: Patient)
+**Task6** - Schedule and Check-In for Appointments (User: Patient)
 - Login to the users account by clicking _Login_ on the top right corner of the toolbar. OR Click the _Book A Doctor_ Button
 - In the _Username_ section enter the following: **_jacksmith21@gmail.com_**
 - In the _Password_ section enter the following: **_password_**
@@ -130,7 +131,8 @@ Task6 - Schedule and Check-In for Appointments (User: Patient)
 - Enter the following six digit code for the two factor authentication: **_123456_**
 - Click the **_Verify_** Button
 - Click the _View Available Doctor_ Button to see which doctor you want to schedule an appointment with
-- Click the _Booking an Appointment_ Button
+- Click on the _**Back**_ button on the top left corner of the toolbar
+- Click the **_Booking an Appointment_** Button
 - In the appoitnment interface click on the _**11am**_ timeblock in the _Friday_ Column
 - In the _Reason for Appointment_ Dropdown menu, select the _**Consultation**_ Option
 - In the _Doctor_ Dropdown menu, select the doctor: _**Dr. Angela**_
